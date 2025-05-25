@@ -1,6 +1,15 @@
 use anchor_lang::prelude::*;
 
-
+/// solana-security-txt for admin contract
+use solana_security_txt::security_txt;
+security_txt! {
+    name: "demo",
+    project_url: "https://github.com/Love-Coke/demo",
+    contacts: "test",
+    policy: "",
+    preferred_languages: "en, cz",
+    auditors: "None"
+}
 
 declare_id!("bgZzeCz71tuJxt5ByowRf7ZXYLpAAYk7ybq1AFqXXDS");
 
