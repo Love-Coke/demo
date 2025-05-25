@@ -1,0 +1,24 @@
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.devnet]
+demo="bgZzeCz71tuJxt5ByowRf7ZXYLpAAYk7ybq1AFqXXDS"
+# tQ7iKDhP3YzWVHVnHTcRXkQthcG6RTr3vEQQKeJWBKc
+
+[programs.localnet]
+demo = "5Y61S87J7uvrcqCaHt5Svii3pLA3XyYUZpXzM3Qkuyyb"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+# cluster = "localnet"
+cluster = "https://solana-devnet.g.alchemy.com/v2/fZRoLpYJI33SdXL-FpL7kGy3mMiy0i8a"
+wallet = "./wallet.json"
+#6Rzxibn7yKBbqP6MVL71B1S4mZoPyRZ5N7ZVqZdszhqq
+[scripts]
+test = "yarn run mocha -t 1000000 tests/"
+
